@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Findr Privacy Policy - Learn how we protect your privacy and handle your data">
+    <title>Privacy Policy - Findr</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #007AFF;
+            --background: #000000;
+            --surface: rgba(28, 28, 30, 0.8);
+            --text-primary: #FFFFFF;
+            --text-secondary: rgba(255, 255, 255, 0.6);
+            --border-glass: rgba(255, 255, 255, 0.1);
+            --accent-blue: #0A84FF;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            background-image:
+                radial-gradient(circle at 20% 20%, rgba(0, 122, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 122, 255, 0.08) 0%, transparent 50%);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 20px;
+            background: var(--surface);
+            border-radius: 24px;
+            border: 1px solid var(--border-glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #007AFF 0%, #0A84FF 100%);
+            border-radius: 18px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #FFFFFF 0%, #0A84FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .last-updated {
+            display: inline-block;
+            background: rgba(0, 122, 255, 0.15);
+            color: var(--accent-blue);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .content-section {
+            background: var(--surface);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--accent-blue);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 30px 0 15px;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 10px;
+            font-size: 1.05rem;
+        }
+
+        .data-table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-glass);
+        }
+
+        .data-table th {
+            background: rgba(0, 122, 255, 0.15);
+            color: var(--accent-blue);
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .data-table td {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .highlight-box {
+            background: rgba(0, 122, 255, 0.1);
+            border-left: 4px solid var(--accent-blue);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+        }
+
+        .contact-info {
+            background: rgba(0, 122, 255, 0.1);
+            padding: 30px;
+            border-radius: 16px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(0, 122, 255, 0.2);
+            color: var(--accent-blue);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .content-section {
+                padding: 25px 20px;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 12px 10px;
+                font-size: 0.9rem;
+            }
+        }
+
+        .toc {
+            background: rgba(0, 122, 255, 0.05);
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: var(--accent-blue);
+        }
+
+        .toc ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .toc li {
+            padding: 8px 0;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon">📍</div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Findr - Find Your Bluetooth Devices</p>
+            <span class="last-updated">Last Updated: October 25, 2024</span>
+        </header>
+
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#introduction">1. Introduction</a></li>
+                <li><a href="#information-we-collect">2. Information We Collect</a></li>
+                <li><a href="#how-we-use">3. How We Use Your Information</a></li>
+                <li><a href="#data-storage">4. Data Storage and Security</a></li>
+                <li><a href="#third-party">5. Third-Party Services</a></li>
+                <li><a href="#your-rights">6. Your Rights and Choices</a></li>
+                <li><a href="#children">7. Children's Privacy</a></li>
+                <li><a href="#changes">8. Changes to This Policy</a></li>
+                <li><a href="#contact">9. Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="content-section" id="introduction">
+            <h2><span class="icon">👋</span> Introduction</h2>
+            <p>
+                Welcome to Findr! We are committed to protecting your privacy and ensuring you have a positive experience while using our application. This Privacy Policy explains how we collect, use, store, and protect your information when you use the Findr mobile application ("App").
+            </p>
+            <p>
+                Findr is designed to help you locate your Bluetooth devices using proximity detection and location services. We believe in transparency and want you to understand exactly what data we collect and why.
+            </p>
+            <div class="highlight-box">
+                <strong>Privacy First:</strong> Your privacy is our top priority. We do not sell, rent, or share your personal information with third parties for marketing purposes. All data collected is used solely to provide and improve the App's functionality.
+            </div>
+        </div>
+
+        <div class="content-section" id="information-we-collect">
+            <h2><span class="icon">📊</span> Information We Collect</h2>
+
+            <h3>2.1 Information You Provide Directly</h3>
+            <p>We collect the following information that you provide when using the App:</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Purpose</th>
+                        <th>Storage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Custom Device Names</strong></td>
+                        <td>To help you identify your Bluetooth devices with personalized names</td>
+                        <td>Stored locally on your device</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Device Marking Preferences</strong></td>
+                        <td>To organize devices into "My Devices" section</td>
+                        <td>Stored locally on your device</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Notification Settings</strong></td>
+                        <td>To send alerts when devices are lost or found</td>
+                        <td>Stored locally on your device</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2.2 Automatically Collected Information</h3>
+            <p>The App automatically collects certain information to function properly:</p>
+
+            <ul>
+                <li><strong>Bluetooth Information:</strong> We scan for nearby Bluetooth devices to detect their presence, signal strength (RSSI), and proximity. This includes device identifiers, names, and connection status.</li>
+
+                <li><strong>Location Data:</strong> When you grant permission, we collect your device's GPS coordinates to:
+                    <ul>
+                        <li>Save the last known location of tracked devices</li>
+                        <li>Display device locations on a map</li>
+                        <li>Enable location sharing features</li>
+                    </ul>
+                    <span class="badge">Premium Feature</span>
+                </li>
+
+                <li><strong>Device Information:</strong> We collect basic device information such as:
+                    <ul>
+                        <li>iOS version</li>
+                        <li>App version</li>
+                        <li>Device model (for compatibility purposes)</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>2.3 Purchase Information</h3>
+            <p>
+                If you purchase premium features, payment processing is handled entirely by Apple through the App Store. We do not collect or store your credit card information or payment details. We only receive confirmation of purchase status through Apple's StoreKit framework.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Important:</strong> All data collected by Findr is stored locally on your device. We do not operate remote servers or upload your data to the cloud.
+            </div>
+        </div>
+
+        <div class="content-section" id="how-we-use">
+            <h2><span class="icon">🎯</span> How We Use Your Information</h2>
+
+            <p>We use the collected information for the following purposes:</p>
+
+            <h3>3.1 Core Functionality</h3>
+            <ul>
+                <li><strong>Device Tracking:</strong> To detect and track Bluetooth devices in your vicinity</li>
+                <li><strong>Proximity Detection:</strong> To calculate distance and provide audio/visual feedback</li>
+                <li><strong>Location Mapping:</strong> To show device locations on a map (Premium feature)</li>
+                <li><strong>Lost Device Alerts:</strong> To send notifications when devices move out of range (Premium feature)</li>
+            </ul>
+
+            <h3>3.2 Personalization</h3>
+            <ul>
+                <li>Remember your custom device names and preferences</li>
+                <li>Organize devices into "My Devices" category (Premium feature)</li>
+                <li>Maintain notification preferences for each device</li>
+            </ul>
+
+            <h3>3.3 App Improvement</h3>
+            <ul>
+                <li>Analyze crash reports to improve stability (anonymized data only)</li>
+                <li>Optimize battery usage and performance</li>
+                <li>Develop new features based on usage patterns</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>No Tracking:</strong> We do not use your data for advertising, analytics, or tracking purposes. Your privacy is respected at all times.
+            </div>
+        </div>
+
+        <div class="content-section" id="data-storage">
+            <h2><span class="icon">🔒</span> Data Storage and Security</h2>
+
+            <h3>4.1 Local Storage</h3>
+            <p>
+                All your data is stored locally on your device using Apple's secure UserDefaults system. This includes:
+            </p>
+            <ul>
+                <li>Custom device names</li>
+                <li>Device marking preferences (My Devices)</li>
+                <li>Notification settings</li>
+                <li>Last known device locations</li>
+                <li>Premium purchase status</li>
+            </ul>
+
+            <h3>4.2 Data Retention</h3>
+            <p>
+                Your data is retained on your device until you:
+            </p>
+            <ul>
+                <li>Manually delete the App</li>
+                <li>Clear app data through iOS Settings</li>
+                <li>Reset your device</li>
+            </ul>
+
+            <h3>4.3 Security Measures</h3>
+            <p>We implement the following security measures to protect your data:</p>
+            <ul>
+                <li><strong>Encrypted Storage:</strong> All data is stored using iOS's encrypted storage mechanisms</li>
+                <li><strong>No Cloud Sync:</strong> Your data stays on your device and is never transmitted to external servers</li>
+                <li><strong>Secure Bluetooth:</strong> Bluetooth scanning uses Apple's Core Bluetooth framework with built-in security</li>
+                <li><strong>Permission-Based Access:</strong> Location and Bluetooth access require explicit user permission</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Data Protection:</strong> Since all data is stored locally, you have complete control. We cannot access, view, or recover your data remotely.
+            </div>
+        </div>
+
+        <div class="content-section" id="third-party">
+            <h2><span class="icon">🤝</span> Third-Party Services</h2>
+
+            <h3>5.1 Apple Services</h3>
+            <p>Findr uses the following Apple frameworks and services:</p>
+
+            <ul>
+                <li><strong>Core Bluetooth:</strong> For scanning and detecting Bluetooth devices</li>
+                <li><strong>Core Location:</strong> For GPS location tracking (with your permission)</li>
+                <li><strong>StoreKit:</strong> For processing in-app purchases (Apple handles all payment data)</li>
+                <li><strong>UserNotifications:</strong> For sending local notifications about lost/found devices</li>
+                <li><strong>MapKit:</strong> For displaying device locations on maps</li>
+            </ul>
+
+            <p>
+                These are native Apple frameworks that respect iOS privacy policies. No data is shared with Apple beyond standard App Store analytics (which you can disable in iOS Settings).
+            </p>
+
+            <h3>5.2 No Third-Party Analytics</h3>
+            <p>
+                We do <strong>NOT</strong> use any third-party analytics services such as:
+            </p>
+            <ul>
+                <li>Google Analytics</li>
+                <li>Facebook SDK</li>
+                <li>Crashlytics</li>
+                <li>Firebase</li>
+                <li>Any other tracking services</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Zero Third-Party Data Sharing:</strong> Your data is never shared with, sold to, or transmitted to any third-party companies or services.
+            </div>
+        </div>
+
+        <div class="content-section" id="your-rights">
+            <h2><span class="icon">⚖️</span> Your Rights and Choices</h2>
+
+            <h3>6.1 Access and Control</h3>
+            <p>You have complete control over your data:</p>
+            <ul>
+                <li><strong>Access:</strong> View all your saved devices and settings within the App</li>
+                <li><strong>Modify:</strong> Edit device names, preferences, and settings at any time</li>
+                <li><strong>Delete:</strong> Remove the App to delete all locally stored data</li>
+                <li><strong>Export:</strong> Location data can be shared via the built-in sharing feature</li>
+            </ul>
+
+            <h3>6.2 Permissions Management</h3>
+            <p>You can manage permissions through iOS Settings:</p>
+            <ul>
+                <li><strong>Bluetooth:</strong> Settings → Privacy & Security → Bluetooth → Findr</li>
+                <li><strong>Location:</strong> Settings → Privacy & Security → Location Services → Findr</li>
+                <li><strong>Notifications:</strong> Settings → Notifications → Findr</li>
+            </ul>
+
+            <h3>6.3 GDPR Rights (European Users)</h3>
+            <p>If you are in the European Economic Area (EEA), you have the following rights:</p>
+            <ul>
+                <li><strong>Right to Access:</strong> Request information about data we process</li>
+                <li><strong>Right to Rectification:</strong> Correct inaccurate data</li>
+                <li><strong>Right to Erasure:</strong> Request deletion of your data</li>
+                <li><strong>Right to Data Portability:</strong> Receive your data in a structured format</li>
+                <li><strong>Right to Object:</strong> Object to certain types of data processing</li>
+            </ul>
+
+            <h3>6.4 CCPA Rights (California Users)</h3>
+            <p>If you are a California resident, you have the right to:</p>
+            <ul>
+                <li>Know what personal information we collect</li>
+                <li>Know whether we sell or share personal information (we don't)</li>
+                <li>Access your personal information</li>
+                <li>Request deletion of your personal information</li>
+                <li>Opt-out of the sale of personal information (not applicable as we don't sell data)</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Exercising Your Rights:</strong> Since all data is stored locally on your device, you have immediate and complete control. Simply delete the App to remove all data, or adjust permissions in iOS Settings.
+            </div>
+        </div>
+
+        <div class="content-section" id="children">
+            <h2><span class="icon">👶</span> Children's Privacy</h2>
+            <p>
+                Findr is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.
+            </p>
+            <p>
+                The App does not contain:
+            </p>
+            <ul>
+                <li>Third-party advertising</li>
+                <li>Social media integration</li>
+                <li>User-generated content features</li>
+                <li>External links (except for support contact)</li>
+            </ul>
+        </div>
+
+        <div class="content-section" id="changes">
+            <h2><span class="icon">📝</span> Changes to This Privacy Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, regulatory, or operational reasons. When we make changes:
+            </p>
+            <ul>
+                <li>We will update the "Last Updated" date at the top of this policy</li>
+                <li>Significant changes will be communicated through an in-app notification</li>
+                <li>Continued use of the App after changes constitutes acceptance of the updated policy</li>
+            </ul>
+            <p>
+                We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information.
+            </p>
+        </div>
+
+        <div class="content-section" id="contact">
+            <h2><span class="icon">📧</span> Contact Us</h2>
+            <p>
+                If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:
+            </p>
+
+            <div class="contact-info">
+                <p><strong>Email:</strong></p>
+                <p><a href="mailto:support@findrapp.com">support@findrapp.com</a></p>
+                <p style="margin-top: 20px; color: var(--text-secondary); font-size: 0.95rem;">
+                    We aim to respond to all inquiries within 48 hours.
+                </p>
+            </div>
+
+            <h3>Data Protection Officer</h3>
+            <p>
+                For GDPR-related inquiries, you may contact our Data Protection Officer at the email address above with the subject line "GDPR Inquiry".
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2><span class="icon">✅</span> Summary</h2>
+            <p>In summary, here's what you need to know about Findr and your privacy:</p>
+
+            <table class="data-table">
+                <tbody>
+                    <tr>
+                        <td><strong>Do we collect personal data?</strong></td>
+                        <td>Only device names and preferences you choose to provide</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Do we collect location data?</strong></td>
+                        <td>Yes, but only with your explicit permission (Premium feature)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Is data stored on our servers?</strong></td>
+                        <td>No, all data is stored locally on your device</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Do we share data with third parties?</strong></td>
+                        <td>No, never</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Do we use analytics or tracking?</strong></td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Do we sell your data?</strong></td>
+                        <td>No, absolutely not</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Can you delete your data?</strong></td>
+                        <td>Yes, by deleting the App</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Is the App GDPR compliant?</strong></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Is the App CCPA compliant?</strong></td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Findr. All rights reserved.</p>
+            <p style="margin-top: 10px;">Made with privacy in mind 🔒</p>
+        </footer>
+    </div>
+</body>
+</html>
