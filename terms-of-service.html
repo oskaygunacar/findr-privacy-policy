@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Findrer Terms of Service - Legal terms and conditions for using our Bluetooth device finder app">
+    <title>Terms of Service - Findrer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #007AFF;
+            --background: #000000;
+            --surface: rgba(28, 28, 30, 0.8);
+            --text-primary: #FFFFFF;
+            --text-secondary: rgba(255, 255, 255, 0.6);
+            --border-glass: rgba(255, 255, 255, 0.1);
+            --accent-blue: #0A84FF;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            background-image:
+                radial-gradient(circle at 20% 20%, rgba(0, 122, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 122, 255, 0.08) 0%, transparent 50%);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 20px;
+            background: var(--surface);
+            border-radius: 24px;
+            border: 1px solid var(--border-glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #007AFF 0%, #0A84FF 100%);
+            border-radius: 18px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #FFFFFF 0%, #0A84FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .last-updated {
+            display: inline-block;
+            background: rgba(0, 122, 255, 0.15);
+            color: var(--accent-blue);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .content-section {
+            background: var(--surface);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--accent-blue);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 30px 0 15px;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 10px;
+            font-size: 1.05rem;
+        }
+
+        .data-table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-glass);
+        }
+
+        .data-table th {
+            background: rgba(0, 122, 255, 0.15);
+            color: var(--accent-blue);
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .data-table td {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .highlight-box {
+            background: rgba(0, 122, 255, 0.1);
+            border-left: 4px solid var(--accent-blue);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 170, 0, 0.1);
+            border-left: 4px solid #FFAA00;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+        }
+
+        .contact-info {
+            background: rgba(0, 122, 255, 0.1);
+            padding: 30px;
+            border-radius: 16px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(0, 122, 255, 0.2);
+            color: var(--accent-blue);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .content-section {
+                padding: 25px 20px;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 12px 10px;
+                font-size: 0.9rem;
+            }
+        }
+
+        .toc {
+            background: rgba(0, 122, 255, 0.05);
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: var(--accent-blue);
+        }
+
+        .toc ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .toc li {
+            padding: 8px 0;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon">📍</div>
+            <h1>Terms of Service</h1>
+            <p class="subtitle">Findrer - Find Your Bluetooth Devices</p>
+            <span class="last-updated">Last Updated: October 31, 2024</span>
+        </header>
+
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+                <li><a href="#description">2. Service Description</a></li>
+                <li><a href="#eligibility">3. Eligibility</a></li>
+                <li><a href="#license">4. License to Use</a></li>
+                <li><a href="#premium">5. Premium Features & Purchases</a></li>
+                <li><a href="#limitations">6. Service Limitations</a></li>
+                <li><a href="#user-conduct">7. User Conduct & Responsibilities</a></li>
+                <li><a href="#privacy">8. Privacy & Data Collection</a></li>
+                <li><a href="#intellectual-property">9. Intellectual Property</a></li>
+                <li><a href="#disclaimers">10. Disclaimers of Warranties</a></li>
+                <li><a href="#liability">11. Limitation of Liability</a></li>
+                <li><a href="#indemnification">12. Indemnification</a></li>
+                <li><a href="#modifications">13. Modifications to Service</a></li>
+                <li><a href="#termination">14. Termination</a></li>
+                <li><a href="#governing-law">15. Governing Law</a></li>
+                <li><a href="#contact">16. Contact Information</a></li>
+            </ul>
+        </div>
+
+        <div class="content-section" id="acceptance">
+            <h2><span class="icon">📋</span> Acceptance of Terms</h2>
+            <p>
+                Welcome to Findrer! These Terms of Service ("Terms", "Terms of Service") govern your use of the Findrer mobile application (the "App", "Service") operated by Findrer ("us", "we", or "our").
+            </p>
+            <p>
+                By downloading, installing, accessing, or using the Findrer app, you agree to be bound by these Terms. If you disagree with any part of these terms, you may not access or use the Service.
+            </p>
+            <div class="highlight-box">
+                <strong>Important:</strong> Please read these Terms carefully before using our Service. Your continued use of the Service constitutes acceptance of these Terms and any future modifications.
+            </div>
+        </div>
+
+        <div class="content-section" id="description">
+            <h2><span class="icon">📱</span> Service Description</h2>
+
+            <h3>2.1 What is Findrer?</h3>
+            <p>
+                Findrer is a Bluetooth Low Energy (BLE) device finder application designed for iOS devices. The Service helps users locate their misplaced Bluetooth-enabled devices through:
+            </p>
+            <ul>
+                <li>Real-time proximity detection using RSSI (Received Signal Strength Indicator)</li>
+                <li>Visual and audio feedback to guide users to their devices</li>
+                <li>Last-known location mapping (Premium feature)</li>
+                <li>Lost/found notifications (Premium feature)</li>
+                <li>Custom device naming and organization</li>
+            </ul>
+
+            <h3>2.2 How Findrer Works</h3>
+            <p>
+                The App scans for nearby Bluetooth devices using your iPhone's Bluetooth radio. It calculates approximate distance based on signal strength and displays devices in order of proximity. The App does not connect to your devices; it only detects their Bluetooth advertising signals.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Technical Note:</strong> Findrer uses standard iOS CoreBluetooth framework and does not require pairing or connecting to your devices.
+            </div>
+        </div>
+
+        <div class="content-section" id="eligibility">
+            <h2><span class="icon">✅</span> Eligibility</h2>
+
+            <h3>3.1 Age Requirements</h3>
+            <p>
+                You must be at least 13 years of age to use this Service. By using Findrer, you represent and warrant that you meet this age requirement.
+            </p>
+
+            <h3>3.2 Device Requirements</h3>
+            <p>
+                To use Findrer, you must have:
+            </p>
+            <ul>
+                <li>An iOS device running iOS 16.0 or later</li>
+                <li>Bluetooth 4.0 (Bluetooth Low Energy) or newer</li>
+                <li>Active Bluetooth functionality</li>
+                <li>Sufficient storage space for the App</li>
+            </ul>
+
+            <h3>3.3 Permissions Required</h3>
+            <p>
+                The App requires the following iOS permissions to function:
+            </p>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Permission</th>
+                        <th>Purpose</th>
+                        <th>Required</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Bluetooth</strong></td>
+                        <td>Scan for nearby Bluetooth devices</td>
+                        <td>Yes (Core functionality)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Location</strong></td>
+                        <td>Save last-known GPS coordinates</td>
+                        <td>Optional (Premium feature)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Notifications</strong></td>
+                        <td>Send lost/found device alerts</td>
+                        <td>Optional</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content-section" id="license">
+            <h2><span class="icon">📄</span> License to Use</h2>
+
+            <h3>4.1 Grant of License</h3>
+            <p>
+                Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to download, install, and use the Findrer app on your personal iOS device solely for your personal, non-commercial use.
+            </p>
+
+            <h3>4.2 License Restrictions</h3>
+            <p>
+                You agree NOT to:
+            </p>
+            <ul>
+                <li>Copy, modify, or create derivative works of the App</li>
+                <li>Reverse engineer, decompile, or disassemble the App</li>
+                <li>Rent, lease, lend, sell, redistribute, or sublicense the App</li>
+                <li>Remove any copyright or proprietary notices from the App</li>
+                <li>Use the App for any illegal, unauthorized, or commercial purpose</li>
+                <li>Attempt to gain unauthorized access to any part of the Service</li>
+                <li>Interfere with or disrupt the integrity or performance of the App</li>
+                <li>Use the App to track devices you do not own without authorization</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>Legal Warning:</strong> Using Findrer to track devices belonging to others without their consent may violate privacy laws and is strictly prohibited. Violators will be subject to account termination and potential legal action.
+            </div>
+        </div>
+
+        <div class="content-section" id="premium">
+            <h2><span class="icon">💎</span> Premium Features & Purchases</h2>
+
+            <h3>5.1 Free vs. Premium</h3>
+            <p>
+                Findrer offers both free and premium features:
+            </p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Free Tier</th>
+                        <th>Premium Tier</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Device Scanning</strong></td>
+                        <td>Up to 5 devices</td>
+                        <td>Unlimited devices</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Proximity Tracking</strong></td>
+                        <td>✓ Included</td>
+                        <td>✓ Included</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Map View</strong></td>
+                        <td>✗ Not available</td>
+                        <td>✓ Included</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lost/Found Alerts</strong></td>
+                        <td>Basic</td>
+                        <td>Advanced notifications</td>
+                    </tr>
+                    <tr>
+                        <td><strong>My Devices</strong></td>
+                        <td>✗ Not available</td>
+                        <td>✓ Favorites organization</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Location Sharing</strong></td>
+                        <td>✗ Not available</td>
+                        <td>✓ Share via any app</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sound Playback</strong></td>
+                        <td>✗ Not available</td>
+                        <td>✓ Compatible devices</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>5.2 Pricing & Payment</h3>
+            <p>
+                Premium access is available via a <strong>one-time lifetime purchase of $9.99 USD</strong> (or equivalent in your local currency). This is NOT a subscription—you pay once and own premium features forever.
+            </p>
+            <ul>
+                <li><strong>Payment Processing:</strong> All payments are processed securely through Apple's App Store using your Apple ID</li>
+                <li><strong>Price Variations:</strong> Prices may vary by region due to currency exchange rates and local taxes</li>
+                <li><strong>We Never See Your Payment Info:</strong> We do not collect or store your credit card information</li>
+            </ul>
+
+            <h3>5.3 Purchase Terms</h3>
+            <ul>
+                <li>Premium purchase is tied to your Apple ID and can be used on any iOS device signed into that account</li>
+                <li>Premium access is immediate upon successful purchase</li>
+                <li>You can restore your purchase on new devices via the "Restore Purchase" option in Settings</li>
+                <li>Premium features apply to the App on all your devices using the same Apple ID</li>
+            </ul>
+
+            <h3>5.4 Refund Policy</h3>
+            <p>
+                All purchases are processed through Apple's App Store. Refund requests must be submitted directly to Apple according to their refund policy:
+            </p>
+            <ul>
+                <li>Visit <a href="https://reportaproblem.apple.com" target="_blank" style="color: var(--accent-blue);">reportaproblem.apple.com</a></li>
+                <li>Sign in with your Apple ID</li>
+                <li>Find Findrer Premium purchase</li>
+                <li>Select "Report a Problem" and request refund</li>
+            </ul>
+            <p>
+                We cannot process refunds directly as we do not handle payment transactions. Apple's standard refund terms apply (typically within 90 days of purchase if you haven't used the app extensively).
+            </p>
+
+            <h3>5.5 Changes to Premium Features</h3>
+            <p>
+                We reserve the right to:
+            </p>
+            <ul>
+                <li>Add new premium features in future updates (automatically included for premium users)</li>
+                <li>Modify existing premium features to improve functionality</li>
+                <li>Discontinue specific premium features with reasonable notice (will not affect core premium features)</li>
+            </ul>
+            <p>
+                Any changes that significantly reduce the value of your premium purchase will result in advance notice and potential compensation.
+            </p>
+        </div>
+
+        <div class="content-section" id="limitations">
+            <h2><span class="icon">⚠️</span> Service Limitations</h2>
+
+            <h3>6.1 Bluetooth Technology Limitations</h3>
+            <p>
+                Findrer relies on Bluetooth Low Energy technology, which has inherent limitations:
+            </p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Limitation</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Range</strong></td>
+                        <td>Typical range: 10-30 meters (33-100 feet) in open air. Range is significantly reduced by walls, furniture, and obstacles.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Accuracy</strong></td>
+                        <td>Distance calculations have ±2-5 meter (±6-16 feet) error margin. Accuracy varies by environment.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Detection</strong></td>
+                        <td>Device must be powered on and have Bluetooth enabled to be detected.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Interference</strong></td>
+                        <td>Metal objects, water, concrete, and other electronic devices can interfere with Bluetooth signals.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Background Scanning</strong></td>
+                        <td>iOS limits background Bluetooth scanning to approximately 10 seconds when app is not active.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>6.2 Location Services Limitations</h3>
+            <p>
+                The map view feature (Premium) relies on GPS location services:
+            </p>
+            <ul>
+                <li><strong>GPS Accuracy:</strong> Typical accuracy is ±10 meters (±33 feet) but can be worse indoors or in urban canyons</li>
+                <li><strong>Last-Known Location:</strong> Shows where your device was last detected, not its current location if it has moved</li>
+                <li><strong>Search Radius:</strong> The displayed ~30-meter radius circle is an approximate search area</li>
+                <li><strong>Indoor Limitations:</strong> GPS accuracy degrades significantly inside buildings</li>
+            </ul>
+
+            <h3>6.3 Device Compatibility</h3>
+            <p>
+                Not all features work with all devices:
+            </p>
+            <ul>
+                <li><strong>Sound Playback:</strong> Only works with devices that support remote audio trigger commands (e.g., AirPods, some speakers)</li>
+                <li><strong>Device Names:</strong> Some devices broadcast generic names (e.g., "Unknown Device") that cannot be customized by the manufacturer</li>
+                <li><strong>Stealth Mode:</strong> Some devices can operate in non-discoverable mode and won't appear in scans</li>
+            </ul>
+
+            <h3>6.4 No Guarantees</h3>
+            <div class="warning-box">
+                <strong>Important Disclaimer:</strong> Findrer is a tool to assist in locating Bluetooth devices but does not guarantee you will find your lost device. Success depends on many factors including battery life, Bluetooth range, environmental conditions, and whether the device is powered on.
+            </div>
+        </div>
+
+        <div class="content-section" id="user-conduct">
+            <h2><span class="icon">👤</span> User Conduct & Responsibilities</h2>
+
+            <h3>7.1 Acceptable Use</h3>
+            <p>
+                You agree to use Findrer only for lawful purposes:
+            </p>
+            <ul>
+                <li>Track only devices you own or have explicit permission to track</li>
+                <li>Comply with all local privacy and stalking laws</li>
+                <li>Respect others' privacy rights</li>
+                <li>Use the Service in good faith for its intended purpose</li>
+            </ul>
+
+            <h3>7.2 Prohibited Uses</h3>
+            <p>
+                You expressly agree NOT to use Findrer to:
+            </p>
+            <ul>
+                <li><strong>Illegal Tracking:</strong> Track individuals without their knowledge or consent (stalking is illegal)</li>
+                <li><strong>Harassment:</strong> Monitor someone's location or devices for harassment purposes</li>
+                <li><strong>Theft:</strong> Locate devices belonging to others with intent to steal</li>
+                <li><strong>Privacy Invasion:</strong> Violate anyone's reasonable expectation of privacy</li>
+                <li><strong>Commercial Use:</strong> Use the App for business purposes without written authorization</li>
+                <li><strong>Competitive Analysis:</strong> Reverse engineer the App for competitive purposes</li>
+            </ul>
+
+            <h3>7.3 User Responsibility</h3>
+            <p>
+                You are solely responsible for:
+            </p>
+            <ul>
+                <li>Ensuring your use complies with applicable laws in your jurisdiction</li>
+                <li>Obtaining necessary consents before tracking devices</li>
+                <li>Maintaining the security of your iOS device</li>
+                <li>Any consequences arising from misuse of the Service</li>
+                <li>Ensuring you have the legal right to track the devices you monitor</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>Legal Notice:</strong> Unauthorized tracking of individuals or their devices may violate federal and state wiretapping statutes, stalking laws, and privacy laws. Violations may result in criminal prosecution and civil liability. Use Findrer responsibly and legally.
+            </div>
+        </div>
+
+        <div class="content-section" id="privacy">
+            <h2><span class="icon">🔒</span> Privacy & Data Collection</h2>
+
+            <h3>8.1 Privacy Policy</h3>
+            <p>
+                Your privacy is important to us. Our use and collection of your information is governed by our separate <a href="privacy-policy.html" style="color: var(--accent-blue);">Privacy Policy</a>, which is incorporated into these Terms by reference.
+            </p>
+
+            <h3>8.2 Data Collection Summary</h3>
+            <p>
+                Findrer collects minimal data:
+            </p>
+            <ul>
+                <li><strong>Bluetooth Device Info:</strong> Device names, identifiers, signal strength (stored locally only)</li>
+                <li><strong>Location Data:</strong> GPS coordinates (only if you grant permission and use Premium map feature)</li>
+                <li><strong>User Preferences:</strong> Custom device names, notification settings (stored locally)</li>
+                <li><strong>Purchase Status:</strong> Premium purchase validation through RevenueCat</li>
+            </ul>
+
+            <h3>8.3 Local Storage Only</h3>
+            <div class="highlight-box">
+                <strong>Privacy Commitment:</strong> All your device data, custom names, and preferences are stored locally on your iPhone. We do not operate cloud servers or upload your tracking data. Your data never leaves your device except for purchase validation through Apple's secure servers.
+            </div>
+
+            <h3>8.4 Third-Party Services</h3>
+            <p>
+                We use the following third-party services:
+            </p>
+            <ul>
+                <li><strong>Apple App Store:</strong> Purchase processing and app distribution</li>
+                <li><strong>RevenueCat:</strong> In-app purchase validation and entitlement management</li>
+            </ul>
+            <p>
+                These services have their own privacy policies and terms. We do not control their data practices.
+            </p>
+        </div>
+
+        <div class="content-section" id="intellectual-property">
+            <h2><span class="icon">©️</span> Intellectual Property</h2>
+
+            <h3>9.1 Ownership</h3>
+            <p>
+                The Findrer app, including all content, features, functionality, source code, design, graphics, interface, and documentation, is owned by Findrer and is protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.
+            </p>
+
+            <h3>9.2 Trademarks</h3>
+            <p>
+                "Findrer" and the Findrer logo are trademarks of Findrer. You may not use these trademarks without our prior written consent.
+            </p>
+
+            <h3>9.3 User-Generated Content</h3>
+            <p>
+                Custom device names you create remain your property. By using the Service, you grant us no rights to this content as it is stored locally on your device.
+            </p>
+
+            <h3>9.4 Feedback</h3>
+            <p>
+                If you provide feedback, suggestions, or ideas about the Service ("Feedback"), you grant us a perpetual, worldwide, royalty-free license to use that Feedback to improve the Service without compensation or attribution.
+            </p>
+        </div>
+
+        <div class="content-section" id="disclaimers">
+            <h2><span class="icon">⚖️</span> Disclaimers of Warranties</h2>
+
+            <h3>10.1 "As-Is" Service</h3>
+            <p>
+                THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:
+            </p>
+            <ul>
+                <li>Warranties of merchantability</li>
+                <li>Fitness for a particular purpose</li>
+                <li>Non-infringement</li>
+                <li>Accuracy, reliability, or availability</li>
+                <li>Error-free or uninterrupted operation</li>
+            </ul>
+
+            <h3>10.2 No Guarantee of Results</h3>
+            <p>
+                WE DO NOT GUARANTEE THAT:
+            </p>
+            <ul>
+                <li>You will find your lost device</li>
+                <li>The Service will meet your specific requirements</li>
+                <li>Distance calculations will be accurate</li>
+                <li>Location data will be precise</li>
+                <li>The Service will be available at all times</li>
+                <li>All devices will be detectable</li>
+                <li>Notifications will always be delivered</li>
+            </ul>
+
+            <h3>10.3 Technical Limitations</h3>
+            <p>
+                We disclaim responsibility for:
+            </p>
+            <ul>
+                <li>Bluetooth signal interference or obstruction</li>
+                <li>iOS background scanning limitations</li>
+                <li>GPS accuracy issues</li>
+                <li>Device battery drain (though we optimize for efficiency)</li>
+                <li>Compatibility with specific Bluetooth devices</li>
+                <li>Third-party service failures (Apple servers, RevenueCat)</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>Important:</strong> Some jurisdictions do not allow disclaimers of implied warranties. If these laws apply to you, some or all of the above disclaimers may not apply, and you may have additional rights.
+            </div>
+        </div>
+
+        <div class="content-section" id="liability">
+            <h2><span class="icon">🛡️</span> Limitation of Liability</h2>
+
+            <h3>11.1 Exclusion of Damages</h3>
+            <p>
+                TO THE MAXIMUM EXTENT PERMITTED BY LAW, FINDRER SHALL NOT BE LIABLE FOR ANY:
+            </p>
+            <ul>
+                <li><strong>Indirect, incidental, special, consequential, or punitive damages</strong></li>
+                <li><strong>Loss of profits, revenue, data, or use</strong></li>
+                <li><strong>Loss or damage to devices you are tracking</strong></li>
+                <li><strong>Theft of devices you were tracking</strong></li>
+                <li><strong>Costs of procurement of substitute goods or services</strong></li>
+                <li><strong>Personal injury or property damage</strong> arising from use of the Service</li>
+                <li><strong>Any damages arising from</strong> your inability to find a device</li>
+            </ul>
+
+            <h3>11.2 Liability Cap</h3>
+            <p>
+                OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING FROM OR RELATED TO THE SERVICE SHALL NOT EXCEED THE AMOUNT YOU PAID US IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM (i.e., $9.99 maximum if you purchased Premium, or $0 if using free version).
+            </p>
+
+            <h3>11.3 Legal Basis</h3>
+            <p>
+                These limitations apply:
+            </p>
+            <ul>
+                <li>Whether or not we have been advised of the possibility of such damages</li>
+                <li>Regardless of the theory of liability (contract, tort, negligence, strict liability, or otherwise)</li>
+                <li>Even if any limited remedy fails of its essential purpose</li>
+            </ul>
+
+            <h3>11.4 Jurisdictional Exceptions</h3>
+            <p>
+                Some jurisdictions do not allow limitation of liability for incidental or consequential damages. In such jurisdictions, our liability is limited to the greatest extent permitted by law.
+            </p>
+        </div>
+
+        <div class="content-section" id="indemnification">
+            <h2><span class="icon">🤝</span> Indemnification</h2>
+
+            <p>
+                You agree to indemnify, defend, and hold harmless Findrer, its officers, directors, employees, agents, licensors, and suppliers from and against all claims, losses, expenses, damages, and costs, including reasonable attorneys' fees, arising from or related to:
+            </p>
+            <ul>
+                <li>Your use or misuse of the Service</li>
+                <li>Your violation of these Terms of Service</li>
+                <li>Your violation of any law or rights of any third party</li>
+                <li>Unauthorized tracking or privacy violations</li>
+                <li>Any content or data you provide to the Service</li>
+                <li>Your device being lost, stolen, or damaged</li>
+            </ul>
+
+            <p>
+                We reserve the right to assume exclusive defense and control of any matter subject to indemnification by you, and you agree to cooperate with our defense of such claims.
+            </p>
+        </div>
+
+        <div class="content-section" id="modifications">
+            <h2><span class="icon">🔄</span> Modifications to Service</h2>
+
+            <h3>13.1 Right to Modify</h3>
+            <p>
+                We reserve the right to:
+            </p>
+            <ul>
+                <li>Modify, suspend, or discontinue the Service (or any part thereof) at any time</li>
+                <li>Change these Terms at any time</li>
+                <li>Impose limits on features or restrict access to parts of the Service</li>
+                <li>Update the App with new versions</li>
+            </ul>
+
+            <h3>13.2 Notice of Changes</h3>
+            <p>
+                When we make significant changes:
+            </p>
+            <ul>
+                <li>We will update the "Last Updated" date at the top</li>
+                <li>Material changes will be communicated via in-app notification</li>
+                <li>Continued use after changes constitutes acceptance</li>
+            </ul>
+
+            <h3>13.3 Service Discontinuation</h3>
+            <p>
+                If we decide to discontinue the Service permanently:
+            </p>
+            <ul>
+                <li>We will provide at least 30 days' advance notice (if technically feasible)</li>
+                <li>Premium users may request a pro-rated refund based on time remaining (at our discretion)</li>
+                <li>Your data will remain on your device (since we don't store it)</li>
+            </ul>
+        </div>
+
+        <div class="content-section" id="termination">
+            <h2><span class="icon">🚫</span> Termination</h2>
+
+            <h3>14.1 Termination by You</h3>
+            <p>
+                You may stop using the Service at any time by:
+            </p>
+            <ul>
+                <li>Deleting the App from your device</li>
+                <li>Discontinuing all use of the Service</li>
+            </ul>
+            <p>
+                Deleting the App removes all locally stored data. Premium purchases remain tied to your Apple ID and can be restored if you reinstall.
+            </p>
+
+            <h3>14.2 Termination by Us</h3>
+            <p>
+                We may suspend or terminate your access immediately, without notice, if:
+            </p>
+            <ul>
+                <li>You violate these Terms of Service</li>
+                <li>You use the Service for illegal purposes</li>
+                <li>You engage in prohibited conduct (stalking, harassment, etc.)</li>
+                <li>You attempt to hack, reverse engineer, or damage the Service</li>
+                <li>Required by law or court order</li>
+            </ul>
+
+            <h3>14.3 Effect of Termination</h3>
+            <p>
+                Upon termination:
+            </p>
+            <ul>
+                <li>Your license to use the App terminates immediately</li>
+                <li>You must cease all use and delete the App</li>
+                <li>Provisions that by their nature should survive (e.g., liability limitations, dispute resolution) will survive termination</li>
+                <li>No refunds will be provided for terminations due to Terms violations</li>
+            </ul>
+        </div>
+
+        <div class="content-section" id="governing-law">
+            <h2><span class="icon">🏛️</span> Governing Law & Dispute Resolution</h2>
+
+            <h3>15.1 Governing Law</h3>
+            <p>
+                These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Findrer operates, without regard to conflict of law principles.
+            </p>
+
+            <h3>15.2 Dispute Resolution</h3>
+            <p>
+                In the event of any dispute arising from these Terms:
+            </p>
+            <ol>
+                <li><strong>Informal Resolution:</strong> Please contact us first at <a href="mailto:support@promptpixels.app" style="color: var(--accent-blue);">support@promptpixels.app</a> to attempt to resolve the issue informally</li>
+                <li><strong>Mediation:</strong> If informal resolution fails, we agree to attempt mediation before pursuing litigation</li>
+                <li><strong>Arbitration/Litigation:</strong> Unresolved disputes will be settled through binding arbitration or in courts of competent jurisdiction</li>
+            </ol>
+
+            <h3>15.3 Class Action Waiver</h3>
+            <p>
+                You agree that disputes will be resolved on an individual basis. You waive any right to participate in class actions or class-wide arbitration.
+            </p>
+
+            <h3>15.4 Apple Terms</h3>
+            <p>
+                These Terms are between you and Findrer only, not Apple. Apple is not responsible for the Service or any claims related to it. However, as a condition of using the App downloaded from the App Store, you must comply with Apple's App Store Terms of Service.
+            </p>
+        </div>
+
+        <div class="content-section" id="contact">
+            <h2><span class="icon">📧</span> Contact Information</h2>
+
+            <p>
+                If you have questions, concerns, or disputes regarding these Terms of Service, please contact us:
+            </p>
+
+            <div class="contact-info">
+                <p><strong>Support Email:</strong></p>
+                <p><a href="mailto:support@promptpixels.app">support@promptpixels.app</a></p>
+                <p style="margin-top: 20px; color: var(--text-secondary); font-size: 0.95rem;">
+                    We aim to respond to all inquiries within 48 hours.
+                </p>
+            </div>
+
+            <h3>Legal Notices</h3>
+            <p>
+                For legal notices, copyright infringement claims, or formal complaints, please write "LEGAL NOTICE" in your email subject line and provide:
+            </p>
+            <ul>
+                <li>Your full legal name and contact information</li>
+                <li>Detailed description of the issue</li>
+                <li>Relevant evidence or documentation</li>
+                <li>Specific relief you are seeking</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2><span class="icon">📝</span> Additional Terms</h2>
+
+            <h3>Severability</h3>
+            <p>
+                If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect.
+            </p>
+
+            <h3>Waiver</h3>
+            <p>
+                Our failure to enforce any right or provision of these Terms will not be deemed a waiver of such right or provision.
+            </p>
+
+            <h3>Entire Agreement</h3>
+            <p>
+                These Terms, together with our Privacy Policy, constitute the entire agreement between you and Findrer regarding the Service and supersede all prior agreements.
+            </p>
+
+            <h3>Assignment</h3>
+            <p>
+                You may not assign or transfer these Terms or your rights under them without our written consent. We may assign these Terms without restriction.
+            </p>
+
+            <h3>Language</h3>
+            <p>
+                These Terms are provided in English. Translations may be provided for convenience, but the English version governs in case of conflicts.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Acknowledgment:</strong> BY DOWNLOADING, INSTALLING, OR USING FINDRER, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF SERVICE, UNDERSTAND THEM, AND AGREE TO BE BOUND BY THEM. IF YOU DO NOT AGREE, DO NOT USE THE SERVICE.
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Findrer. All rights reserved.</p>
+            <p style="margin-top: 10px;">Questions? Email us at <a href="mailto:support@promptpixels.app" style="color: var(--accent-blue);">support@promptpixels.app</a></p>
+        </footer>
+    </div>
+</body>
+</html>
